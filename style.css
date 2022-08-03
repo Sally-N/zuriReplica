@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Averta;
+    src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Averta, sans-serif;
+    padding: 0;
+    margin: 0;
+    /*overflow: hidden;*/
+}
+
+.intro {
+    background-image: url(images/hero-bg.svg);
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+section {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    margin: auto;
+    display: flex;
+    padding-top: 69px;
+    margin-bottom: 69px;
+}
+
+.logo img {
+    margin: auto;
+}
+
+.logoimg {
+    margin-top: 69px;
+    margin-left: 100px;
+    margin-bottom: 143px;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h2 {
+    text-align: center;
+    font-weight: 800;
+    color: #514949;
+    margin-bottom: 36px;
+    font-size: 32px;
+}
+
+#firstparagraph {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: #736c6c;
+    font-size: 16px;
+}
+
+#firstparagraph a {
+    color: red;
+}
+
+.text .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 70px;
+    /* height: 80px;
+    width: 35px; */
+}
