@@ -12,7 +12,7 @@
 }
 
 .intro {
-    background-image: url(images/hero-bg.svg);
+    background-image: url('images/hero-bg.svg');
     text-align: center;
     background-size: cover;
     background-position: center center;
@@ -45,6 +45,7 @@ section {
 
 .text {
     text-align: center;
+    margin-top: 50px;
 }
 
 .text h2 {
@@ -72,7 +73,97 @@ section {
     flex-direction: row;
     justify-content: center;
     /* align-items: center; */
-    margin-top: 70px;
+    margin-top: 105px;
     /* height: 80px;
     width: 35px; */
+}
+
+.text button {
+    padding: 11px 28px;
+    border: 1px solid #E7332B;
+}
+
+.buttons .new-to-industry {
+    color: white;
+    background-color: #E7332B;
+    margin-right: 30px
+}
+
+.buttons .experience {
+    color: #E7332B;
+    background-color: white;
+}
+
+.categories {
+    /* overflow: hidden; */
+    background-color: #fff !important;
+}
+
+.categories .container {
+    margin: 0 auto;
+    /* margin-top: 150px; */
+}
+
+.categories .sub-container {
+    padding-top: 0, !important;
+}
+
+.sub-container h3 {
+    margin-top: 141px;
+    color: #E7332B;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.sub-container p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 64px;
+    color: #514949;
+    font-size: 23px;
+    line-height: 40px;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-items: center; */
+    width: 100%;
+}
+
+.card-wrap {
+    margin-right: 40px;
+    margin-left: 30px;
+    /* margin: 10px; */
+    flex-direction: row;
+    padding: 5px;
+    border: 1px, solid black;
+}
+
+.card {
+    padding: 5px;
+    margin-right: 20px;
+    height: 50%;
+    width: 30%;
+    /* border: 1px, solid black; */
+    border-color: #fffafa;
+    text-align: left!important;
+    font-size: 1rem;
+    /* background-image: url('https://res.cloudinary.com/dafsch2zs/image/upload/v1596628122/Zuri%20Landing/left_bvmv7q.png'); */
+}
+
+.card p {
+    color: #514949;
+}
+
+.card a {
+    color: #E7332B;
+    font-size: 17px;
 }
