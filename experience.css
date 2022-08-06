@@ -18,6 +18,7 @@
                 height: 10%;
                 padding: 20px;
                 align-items: center;
+                position: fixed;
                 /* align-content: center; */
                 /* justify-content: center; */
             }
@@ -34,14 +35,9 @@
             .navbar .links {
                 display: flex;
                 flex-direction: row;
-                /* align-content: center; */
-                /* justify-content: space-evenly; */
-                /* justify-content: flex-end; */
-                /* margin-right: 350px; */
             }
             
             .navbar ul {
-                /* flex-direction: row; */
                 margin: 20px;
             }
             
@@ -220,6 +216,10 @@
                 /* flex-direction: row; */
             }
             
+            .sub-heading {
+                width: 100%;
+            }
+            
             .sec-heading h3 {
                 /* text-align: center; */
                 font-size: 40px;
@@ -227,17 +227,148 @@
                 font-weight: 900;
                 line-height: 49px;
                 /* word-spacing: 4px; */
-                width: 60%;
+                width: 40%;
+                margin-bottom: 40px;
             }
             
             .third h3 span {
                 color: #E7332B;
             }
             
-            .third .row-skills {
+            .row-skills {
+                display: inline;
+                width: 90%;
+            }
+            
+            .row-skills button {
+                background: #fff!important;
+                border-radius: 8px!important;
+                box-shadow: 0 8px 30px hsla(0, 0%, 48%, .16)!important;
+                color: #787878!important;
+            }
+            
+            .skills {
+                width: 70%;
+            }
+            
+            .row-skills .skills {
+                height: 40px;
+                width: 200px;
+                display: inline;
+                align-items: center;
+                /* display: flex; */
+                font-family: Graphik!important;
+                font-size: 18px!important;
+                font-style: normal!important;
+                font-weight: 400!important;
+                /* height: 100%!important; */
+                justify-content: center;
+                line-height: 33px!important;
+                padding: 5px!important;
+                text-align: center;
+                /* border: none; */
+            }
+            
+            .sec-heading .companies {
                 display: flex;
-                margin-top: 30px;
-                flex-flow: row wrap;
-                width: 80%;
-                justify-content: flex-start;
+            }
+            
+            .forth {
+                /* background-color: #fff8e5; */
+                width: 100%;
+                justify-content: center;
+                background-color: #fff8e5;
+            }
+            
+            .four-container {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .four-container .for-hire h3 {
+                color: black;
+                justify-self: center;
+                text-align: center;
+                font-size: 40px;
+                margin-top: 40px;
+                font-weight: 900;
+                line-height: 49px;
+                /* width: 40%; */
+                margin-bottom: 40px;
+            }
+            
+            .forth h3 span {
+                color: #E7332B;
+            }
+            
+            .reasons {
+                width: 100%;
+                height: 650px;
+            }
+            
+            .reasons-container {
+                width: 100%;
+            }
+            
+            .reasons .card-container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                /* flex-direction: row; */
+            }
+            
+            .card {
+                background-color: #fff;
+                margin: 10px;
+                height: 280px;
+                width: 30%;
+                border: 1px solid black;
+                border-bottom-right-radius: 20px;
+                padding-top: 16px;
+                padding-left: 16px;
+            }
+            
+            .card-body {
+                height: 95%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .card-body .card-img {
+                width: 40%;
+                height: 40%;
+            }
+            
+            .card-img img {
+                justify-self: center;
+            }
+            
+            .card-body p {
+                color: #514949;
+                font-size: 21px;
+            }
+            
+            div .linktalents {
+                width: 100%;
+                align-items: center;
+            }
+            
+            .linktalents button {
+                height: 40px;
+                width: 200px;
+                border: none;
+                color: #ffffff;
+                padding-top: 0px;
+                padding-bottom: 5px;
+            }
+            
+            .button-red {
+                background-color: #E7332B;
+                margin-right: 30px;
+                border: none;
+            }
+            
+            .button-black {
+                background-color: #514949;
             }
