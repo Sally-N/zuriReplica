@@ -97,6 +97,10 @@ section {
 .categories {
     /* overflow: hidden; */
     background-color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .categories .container {
@@ -105,7 +109,7 @@ section {
 }
 
 .categories .sub-container {
-    padding-top: 0, !important;
+    padding-top: 0,  !important;
 }
 
 .sub-container h3 {
@@ -119,11 +123,8 @@ section {
 .sub-container p {
     font-size: 24px;
     text-align: center;
-    margin-top: 8px;
-    margin-bottom: 64px;
     color: #514949;
     font-size: 23px;
-    line-height: 40px;
 }
 
 .container-fluid {
@@ -150,12 +151,17 @@ section {
 .card {
     padding: 5px;
     margin-right: 20px;
-    height: 50%;
     width: 30%;
     /* border: 1px, solid black; */
     border-color: #fffafa;
-    text-align: left!important;
+    text-align: left !important;
     font-size: 1rem;
+    background-color: #FFFAFA;
+    height: 60vh !important;
+    padding: 5% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* background-image: url('https://res.cloudinary.com/dafsch2zs/image/upload/v1596628122/Zuri%20Landing/left_bvmv7q.png'); */
 }
 
@@ -166,4 +172,88 @@ section {
 .card a {
     color: #E7332B;
     font-size: 17px;
+}
+
+
+
+/* .cardLeft {
+    width: 30%;
+} */
+
+.cardLeft .m1 {
+    /* z-index: -1; */
+    width: 100%;
+    margin-left: -100px;
+}
+
+.cardLeft .card {
+    width: 100%;
+    /* z-index: 2 !important; */
+    margin-top: -300px;
+}
+
+.rightCard .m1 {
+
+    width: 100%;
+    margin-right: -100px;
+}
+
+.rightCard .card {
+    width: 100%;
+    margin-top: -300px;
+}
+
+.cardM .card {
+    width: 100%;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .intro {
+        height: 200vh;
+        text-align: center;
+    }
+
+    .intro .text {
+        width: 100%;
+        text-align: center !important;
+        padding: 5%;
+/* background-color: rebeccapurple; */
+    }
+    #firstparagraph {
+        text-align: center;
+        margin-left:0px;
+        margin-right: 0px;
+        color: #736c6c;
+        font-size: 16px;
+    }
+    .buttons{
+        width: 100%;
+    }
+
+    .text .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin-top: 105px;
+        padding: 5%;
+        /* height: 80px;
+        width: 35px; */
+    }
+    .buttons .new-to-industry {
+        width: 80vw;
+        color: white;
+        background-color: #E7332B;
+        margin-right: 0px !important
+        
+    }
+    
+    .buttons .experience {
+        color: #E7332B;
+        background-color: white;
+        
+        width: 80vw;
+    }
+
 }
