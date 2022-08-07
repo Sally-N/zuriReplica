@@ -139,8 +139,10 @@
             }
             
             .enroll {
+                height: 40px;
+                width: 120px;
                 background: #e7332b!important;
-                border-radius: 71px!important;
+                border-radius: 50px!important;
                 box-shadow: none!important;
                 color: #fff!important;
                 padding: 10px 32px!important;
@@ -344,4 +346,157 @@
                 font-size: 21px;
                 color: white;
                 font-weight: lighter;
+            }
+            
+            .fourth .buttongroup {
+                width: 100%;
+            }
+            
+            .fourth .row .btn-info {
+                margin: 40px 40px 40px 0;
+                height: 70px;
+                width: 200px;
+                display: inline;
+                align-items: center;
+                /* display: flex; */
+                font-family: Graphik!important;
+                font-size: 19px!important;
+                font-style: normal!important;
+                font-weight: 400!important;
+                /* height: 100%!important; */
+                justify-content: center;
+                line-height: 33px!important;
+                padding: 3px!important;
+                text-align: center;
+                border-radius: 60px;
+                color: white;
+                border: solid white 2px;
+                background-color: #e7332b;
+                /* border: none; */
+            }
+            
+            .four-container .image-left {
+                width: 50%;
+            }
+            
+            .image-left img {
+                width: 100%;
+            }
+            
+            .fifth {
+                width: 100%;
+                height: 900px;
+                background-color: #fffdf5;
+                padding: 80px;
+            }
+            
+            .fifth .scope {
+                width: 40%;
+                margin-bottom: 80px;
+                line-height: normal;
+                /* margin: 80px; */
+            }
+            
+            .scope h4 {
+                font-size: 25px;
+                color: #e7332b;
+                font-weight: lighter;
+                margin-bottom: 10px;
+            }
+            
+            .scope p {
+                font-weight: 900;
+                color: black;
+                font-size: 40px;
+            }
+            
+            .stack-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                /* background-color: #fff4f0; */
+                width: 100%;
+                height: 450px;
+            }
+            
+            .stack-container .card-stack {
+                padding: 5px;
+                height: 300px;
+                width: 30%;
+                margin-right: 30px;
+                margin-top: 30px;
+                /* border: solid black 1px; */
+                border-radius: 18px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                background-color: #fff;
+                box-shadow: 0 5px 5px 5px #e2dddd;
+            }
+            
+            .six {
+                width: 100%;
+                padding: 80px;
+                background-color: #fffdf5;
+                height: 700px;
+            }
+            
+            .six .closed-wrapper {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                /* background-color: #fff4f0; */
+                width: 100%;
+                height: 450px;
+            }
+            
+            .closed-wrapper h5 {
+                font-size: 25px;
+                color: #e7332b;
+                font-weight: lighter;
+                margin-bottom: 10px;
+            }
+            
+            .closed-wrapper h3 {
+                font-weight: 900;
+                color: black;
+                font-size: 40px;
+                margin-bottom: 100px;
+            }
+            
+            .seven {
+                width: 100%;
+                background-color: #fffdf5;
+                height: 1000px;
+                padding: 80px;
+            }
+            
+            .seven .overall-container {
+                width: 100%;
+            }
+            
+            .overall-container h5 {
+                font-size: 25px;
+                color: #e7332b;
+                font-weight: lighter;
+                margin-bottom: 8px;
+                text-align: center;
+            }
+            
+            .overall-container h3 {
+                font-weight: 900;
+                color: black;
+                font-size: 40px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            
+            .overall-container p {
+                color: #514949;
+                text-align: center;
+                font-size: 18px;
             }
