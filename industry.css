@@ -11,6 +11,10 @@
                 /*overflow: hidden;*/
             }
             
+            body {
+                width: 100%;
+            }
+            
             .navbar {
                 background-color: #fffdf5;
                 display: flex;
@@ -471,32 +475,129 @@
             .seven {
                 width: 100%;
                 background-color: #fffdf5;
-                height: 1000px;
+                height: 1700px;
                 padding: 80px;
             }
             
-            .seven .overall-container {
+            .seven-container {
+                height: 600px;
                 width: 100%;
+                text-align: center;
+                /* padding: 80px; */
+                /* background-color: #fff4f0; */
             }
             
-            .overall-container h5 {
+            .seven-container h5 {
                 font-size: 25px;
                 color: #e7332b;
                 font-weight: lighter;
-                margin-bottom: 8px;
-                text-align: center;
+                margin-bottom: 10px;
             }
             
-            .overall-container h3 {
+            .seven-container h3 {
                 font-weight: 900;
                 color: black;
                 font-size: 40px;
-                margin-bottom: 10px;
-                text-align: center;
             }
             
-            .overall-container p {
-                color: #514949;
-                text-align: center;
+            .seven-container p {
+                align-self: center;
+                margin-top: 30px;
+                font-size: large;
+                color: rgb(81, 73, 73);
+            }
+            
+            .tracks-container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            .trackcard {
+                width: 45%;
+                background: #1b1a20;
+                color: white;
+                /* height: 100%; */
+                padding: 50px;
+                font-weight: 500;
+                margin-right: 50px;
+                border-radius: 50px;
+                box-shadow: 5px 20px 10px 0px #fff4f0;
+                text-align: left;
+                /* font-family: Graphik !important; */
+                font-style: normal !important;
+            }
+            
+            .track-body .track-type {
+                font-size: 35px;
+                color: white;
+                font-weight: 700;
+                font-variant: normal;
+                font-family: Graphik;
+                line-height: 45.5px;
+            }
+            
+            .track-body .track-text {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-variant: normal;
+                font-family: Graphik;
+                color: white;
+            }
+            
+            .track-body .sub-heading {
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 400;
+                font-variant: normal;
+                font-family: Graphik;
+                color: white;
+                font-weight: 700;
+            }
+            
+            .track-body li {
+                font-family: Graphik;
+                font-style: normal;
                 font-size: 18px;
+                font-weight: 100;
+                vertical-align: auto;
+                /* display: inline-block; */
+            }
+            
+            .track-body .stylenone {
+                list-style: none;
+            }
+            
+            .get-started {
+                margin: 200px 40px 50px 40px !important;
+                height: 400px;
+                background-color: #e7332b;
+                width: 100%;
+                border-radius: 20px;
+                text-align: center;
+                padding: 70px;
+                font-family: Graphik !important;
+            }
+            
+            .get-started h5 {
+                font-size: 20px;
+                color: white;
+                /* font-weight: lighter; */
+                font-family: Graphik;
+                font-weight: 400;
+                letter-spacing: 0.9px;
+            }
+            
+            .get-started h2 {
+                font-size: 55px;
+                font-style: normal;
+                font-weight: 700;
+                font-variant: normal;
+                font-family: Graphik;
+                color: #fff;
+            }
+            
+            .get-started button {
+                margin: 50px;
             }
