@@ -20,9 +20,11 @@
                 display: flex;
                 flex-direction: row;
                 height: 10%;
-                padding: 20px;
+                padding: 10px 20px 20px 20px;
                 align-items: center;
                 position: fixed;
+                position: fixed;
+                z-index: 1100;
                 /* align-content: center; */
                 /* justify-content: center; */
             }
@@ -32,29 +34,25 @@
             }
             
             .navbar .logo-images {
-                padding-left: 20px;
+                padding-left: 15px;
                 align-items: center;
-                margin-right: 150px;
+                margin-right: 140px;
             }
             
             .navbar .items {
                 display: flex;
                 flex-direction: row;
-                /* align-content: center; */
-                /* justify-content: space-evenly; */
-                /* justify-content: flex-end; */
-                /* margin-right: 350px; */
             }
             
             .navbar ul {
                 flex-direction: row;
-                margin: 30px;
+                margin: 25px;
             }
             
             .navbar ul {
                 display: flex;
                 flex-direction: row;
-                padding-right: 50px;
+                padding-right: 30px;
                 align-items: center;
             }
             
@@ -67,8 +65,45 @@
             
             .navbar ul li a {
                 color: #514949;
-                font-size: 19px;
+                font-size: 23px;
                 letter-spacing: 1px;
+                text-decoration: none;
+                font-family: Graphik;
+                font-weight: 100px;
+                letter-spacing: 0.1px;
+            }
+            
+            .enrollthing {
+                position: relative;
+            }
+            
+            .enrollthing img {
+                padding-top: 5px;
+                width: 60px;
+                height: 70px;
+                background-color: #e7332b;
+                padding-bottom: 5px;
+                border-radius: 5px;
+                margin-left: 0;
+            }
+            
+            .enroll {
+                height: 40px;
+                width: 150px;
+                background: #e7332b!important;
+                border-radius: 50px!important;
+                box-shadow: none!important;
+                color: #fff!important;
+                padding: 6px 32px!important;
+                text-transform: none!important;
+                text-align: center;
+                border: #e7332b;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+            }
+            
+            .enrollthing .enroll {
+                margin-right: 0;
             }
             
             section {
@@ -83,39 +118,44 @@
             
             .first .container {
                 margin-top: 0px;
-                text-align: center;
-                padding-top: 40px;
+                /* text-align: center; */
+                padding-top: 50px;
                 display: flex;
-                flex-flow: row wrap;
+                flex-direction: row;
+                flex-flow: wrap;
+                /* padding-left: 60px; */
+                /* padding-right: 70px; */
             }
             
             .leftimage {
                 /* background-color: #fffdf5; */
-                margin-top: 60px;
-                margin-left: 20px;
-                height: 100px;
-                width: 25%;
+                margin-top: 180px;
+                margin-left: 0px;
+                height: 120px;
+                width: 27%;
             }
             
             .leftimage img {
                 /* background-blend-mode: normal; */
                 height: 300px;
                 width: 100%;
+                background-color: #fffdf5;
             }
             
             .textarea {
-                width: 80%;
-                margin-top: 0;
+                width: 50%;
+                margin-top: 60px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-items: center;
+                /* font-family: Graphik; */
             }
             
             .textarea #pone {
+                padding-top: 0;
                 color: #e7332b;
                 font-family: Graphik!important;
-                font-size: 19px!important;
+                font-size: 20px!important;
                 font-style: normal;
                 font-weight: 400!important;
                 line-height: 130%!important;
@@ -125,46 +165,47 @@
             .textarea #ptwo {
                 color: #1b1a20!important;
                 font-family: Graphik!important;
-                font-size: 49px!important;
-                font-style: normal!important;
-                font-weight: 700!important;
+                font-size: 52px!important;
+                font-style: inherit!important;
+                font-weight: 800!important;
                 line-height: 110%!important;
                 padding-top: 10px!important;
                 text-align: center!important;
             }
             
-            .textarea #pthree {
-                margin: 0px;
-                font-family: Roboto, Helvetica, Arial, sans-serif;
-                font-weight: 400;
-                font-size: 1rem;
-                line-height: 1.5;
-                letter-spacing: 0.00938em;
+            .small {
+                width: 70%;
+                height: 5%;
+                align-self: flex-end;
             }
             
-            .enroll {
-                height: 40px;
-                width: 120px;
-                background: #e7332b!important;
-                border-radius: 50px!important;
-                box-shadow: none!important;
-                color: #fff!important;
-                padding: 10px 32px!important;
-                text-transform: none!important;
+            .textarea #pthree {
+                margin-top: 10px;
+                /* margin: 0px; */
+                /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 23.4px;
+                letter-spacing: 0.00938em;
+                width: 70%;
+                font-family: Times New Roman;
+                color: #2e2d2d;
+                margin-bottom: 30px;
             }
             
             .rightimage {
                 /* background-color: #fffdf5; */
-                margin-top: 60px;
+                margin-top: 180px;
                 margin-left: 20px;
                 height: 100px;
-                width: 25%;
+                width: 20%;
             }
             
             .rightimage img {
                 /* background-blend-mode: normal; */
                 height: 300px;
-                width: 100% position;
+                width: 100%;
+                background-color: #fffdf5;
             }
             
             .second {
@@ -178,23 +219,27 @@
                 display: flex;
                 flex-wrap: row wrap;
                 justify-content: flex-start;
-                margin-right: 30px;
-                margin-left: 60px;
+                padding-right: 20px;
+                padding-left: 60px;
+                padding-top: 20px;
+                align-items: center;
             }
             
             .sec-container h3 {
                 width: 35%;
                 font-size: 24px;
                 font-weight: bold;
+                margin-right: 20px;
                 /* line-height: ; */
             }
             
             .sec-container .poweredby {
-                margin: 20px, 50px, 40px, 100px;
+                /* margin: 0px, 00px, 40px, 70px; */
                 justify-self: center;
                 height: 180px;
                 width: 180px;
                 align-self: center;
+                margin-left: 50px;
             }
             
             .sec-container p {
@@ -207,37 +252,48 @@
                 padding-bottom: 40px!important;
                 padding-top: 30px!important;
                 text-align: right!important;
-                width: 40%;
+                width: 30%;
                 letter-spacing: 1px;
+                margin-left: 160px;
             }
             
             .third {
                 background: #fffdf5;
                 width: 100%;
                 height: 1500px;
-                padding-top: 50px;
-                padding-left: 80px;
+                padding-top: 200px;
+                /* padding-left: 30px; */
             }
             
-            .third .text-section {
+            .third-container {
+                padding-right: 70px;
+                padding-left: 50px;
+            }
+            
+            .third-container .text-section {
                 height: 100px;
                 padding-top: 20px;
-                width: 45%;
                 padding-bottom: 75px;
             }
             
             .text-section h3 {
                 color: #e7332b;
                 /* font-size: 20px; */
-                font-size: 23px;
+                font-size: 24px;
                 font-weight: lighter;
+                line-height: 17px;
+                font-family: Graphik;
+                width: 20%;
+                margin-bottom: 10px;
             }
             
             .text-section p {
                 font-size: 40px;
                 color: black;
-                font-weight: 600;
-                width: 100%;
+                font-weight: 700;
+                width: 50%;
+                font-family: Graphik;
+                line-height: 45px;
             }
             
             .card-wrapper {
