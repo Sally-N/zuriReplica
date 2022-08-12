@@ -540,8 +540,16 @@
       padding: 80px;
   }
   
+  .fifth-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+  }
+  
   .fifth .scope {
-      width: 40%;
+      width: 47%;
       margin-bottom: 80px;
       line-height: normal;
       /* margin: 80px; */
@@ -555,9 +563,9 @@
   }
   
   .scope p {
-      font-weight: 900;
+      font-weight: 700;
       color: black;
-      font-size: 40px;
+      font-size: 39px;
   }
   
   .stack-container {
@@ -584,6 +592,19 @@
       justify-content: flex-start;
       background-color: #fff;
       box-shadow: 0 5px 5px 5px #e2dddd;
+  }
+  
+  .card-body .images-stack {
+      display: flex;
+      flex-direction: row;
+      height: 30%;
+      width: 100%;
+  }
+  
+  .images-stack img {
+      height: 60%;
+      width: 40%;
+      margin-right: 1%;
   }
   
   .six {
