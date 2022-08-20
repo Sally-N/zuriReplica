@@ -9,6 +9,7 @@
 
 body {
     width: 100%;
+    height: fit-content;
 }
 
 .navbar {
@@ -17,49 +18,33 @@ body {
     flex-direction: row;
     height: 10%;
     padding: 10px 20px 20px 20px;
-    align-items: center;
-    position: fixed;
+    align-content: center;
     position: fixed;
     z-index: 1100;
-    /* align-content: center; */
-    /* justify-content: center; */
-}
-
-.container-fluid {
     width: 100%;
-}
-
-.navbar .logo-images {
-    padding-left: 15px;
-    align-items: center;
-    margin-right: 140px;
 }
 
 .navbar .items {
     display: flex;
     flex-direction: row;
-}
-
-.navbar ul {
-    flex-direction: row;
     margin: 25px;
 }
 
-.navbar ul {
+.navbar .items ul {
     display: flex;
     flex-direction: row;
     padding-right: 30px;
     align-items: center;
 }
 
-.navbar ul li {
+.navbar .items ul li {
     list-style: none;
     text-underline-position: none;
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.navbar ul li a {
+.items ul li a {
     color: #514949;
     font-size: 23px;
     letter-spacing: 1px;
@@ -69,9 +54,10 @@ body {
     letter-spacing: 0.1px;
 }
 
-.enrollthing {
+
+/* .enrollthing {
     position: relative;
-}
+} */
 
 .enrollthing img {
     padding-top: 5px;
@@ -98,8 +84,8 @@ body {
     letter-spacing: 0.1px;
 }
 
-.enrollthing .enroll {
-    margin-right: 0;
+.enrollthing button {
+    left: auto;
 }
 
 section {
@@ -161,9 +147,9 @@ section {
 .textarea #ptwo {
     color: #1b1a20!important;
     font-family: Graphik!important;
-    font-size: 52px!important;
+    font-size: 52px;
     font-style: inherit!important;
-    font-weight: 800!important;
+    font-weight: 800;
     line-height: 110%!important;
     padding-top: 10px!important;
     text-align: center!important;
@@ -184,7 +170,7 @@ section {
     line-height: 23.4px;
     letter-spacing: 0.00938em;
     width: 70%;
-    font-family: Times New Roman;
+    font-family: Graphik;
     color: #2e2d2d;
     margin-bottom: 30px;
 }
@@ -213,6 +199,7 @@ section {
 }
 
 .sec-container {
+    height: 100%;
     display: flex;
     flex-wrap: row wrap;
     justify-content: flex-start;
@@ -225,9 +212,9 @@ section {
 .sec-container h3 {
     width: 35%;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     margin-right: 20px;
-    /* line-height: ; */
+    font-family: Graphik;
 }
 
 .sec-container .poweredby {
@@ -245,10 +232,10 @@ section {
     font-size: 24px!important;
     font-style: normal!important;
     font-weight: 400!important;
-    line-height: 130%!important;
-    padding-bottom: 40px!important;
-    padding-top: 30px!important;
-    text-align: right!important;
+    line-height: 130%;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    text-align: right;
     width: 30%;
     letter-spacing: 1px;
     margin-left: 160px;
@@ -265,6 +252,7 @@ section {
 .third-container {
     padding-right: 30px;
     padding-left: 50px;
+    height: 100%;
 }
 
 .third-container .text-section {
@@ -275,7 +263,6 @@ section {
 
 .text-section h3 {
     color: #e7332b;
-    /* font-size: 20px; */
     font-size: 24px;
     font-weight: lighter;
     line-height: 17px;
@@ -305,18 +292,6 @@ section {
     align-items: center;
 }
 
-
-/* .content-container {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                align-items: center;
-                /* background-color: #fff4f0; */
-
-
-/* width: 95%; */
-
 .card {
     height: 450px;
     width: 29%;
@@ -333,15 +308,6 @@ section {
     padding-right: 40px;
     box-shadow: 0 15px 15px 15px #fff3ef;
 }
-
-
-/* .card img {
-                display: flex!important;
-                float: right!important;
-                margin-right: -49px!important;
-                margin-top: -58px!important;
-                width: 42%!important;
-            } */
 
 .card .card-number {
     margin-top: 40px;
@@ -366,7 +332,7 @@ section {
     font-size: 40px;
     display: block;
     font-family: Graphik;
-    align-self: center;
+    /* align-self: center; */
 }
 
 .card .card-text {
@@ -413,6 +379,7 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    padding: 0;
 }
 
 .text-left {
@@ -430,6 +397,7 @@ section {
     color: white;
     font-weight: lighter;
     margin-bottom: 1px;
+    font-family: Graphik;
 }
 
 .forth-text .high-quality {
@@ -447,6 +415,8 @@ section {
     font-weight: lighter;
     margin-top: 10px;
     width: 70%;
+    line-height: 0;
+    /* margin-bottom: 0; */
 }
 
 #white {
@@ -464,16 +434,6 @@ section {
     letter-spacing: 0.1px;
 }
 
-
-/* .fourth .buttongroup {
-      width: 50%;
-  }
-  
-  .buttongroup .row {
-      display: flex;
-      flex-direction: row;
-  } */
-
 .btn-info img {
     height: 50px;
     width: 40px;
@@ -482,17 +442,20 @@ section {
 .four-container .image-right {
     width: 58%;
     height: 100%;
-    float: left;
+    /* float: left; */
+    position: relative;
 }
 
 .image-right img {
     height: 100%;
     width: 100%;
+    margin-top: 0;
 }
 
 .buttongroup {
     height: 50%;
     width: 100%;
+    margin-bottom: 0;
 }
 
 .buttongroup .row {
@@ -528,7 +491,6 @@ section {
 
 .fifth-container {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
@@ -539,7 +501,6 @@ section {
     margin-bottom: 30px;
     line-height: normal;
     height: 20%;
-    /* margin: 80px; */
 }
 
 .scope h4 {
@@ -547,12 +508,14 @@ section {
     color: #e7332b;
     font-weight: lighter;
     margin-bottom: 10px;
+    font-family: Graphik;
 }
 
 .scope p {
     font-weight: 700;
     color: black;
     font-size: 39px;
+    font-family: Graphik;
 }
 
 .stack-container {
@@ -561,7 +524,6 @@ section {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: #fff4f0; */
     width: 100%;
     height: 65%
 }
@@ -573,7 +535,6 @@ section {
     margin-right: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
-    /* border: solid black 1px; */
     border-radius: 18px;
     display: flex;
     flex-direction: column;
@@ -617,7 +578,6 @@ section {
 
 .scope-enroll {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     height: 5%;
     width: 100%;
@@ -647,6 +607,7 @@ section {
 }
 
 .closed-wrapper .questions h5 {
+    font-family: Graphik;
     align-self: center;
     justify-self: center;
     font-size: 25px;
@@ -870,4 +831,384 @@ section {
 
 .get-started button {
     margin: 50px;
+}
+
+
+/* / Small devices (landscape phones, 576px and up) */
+
+
+/* @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+/* @media screen and (max-width: 1440px) {
+    body {
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+        height: 10%
+    }
+} */
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 100%;
+    }
+    .navbar {
+        padding-top: 20px;
+        width: 100%;
+        height: 10%;
+    }
+    .logo-images img {
+        width: 150px;
+        height: 90px;
+    }
+    .items ul {
+        padding-top: 20px;
+    }
+    .items ul li a {
+        font-size: 16PX;
+    }
+    .enrollthing img {
+        height: 40px;
+        width: 30px;
+        border-radius: 30px;
+    }
+    .third {
+        height: 2000px
+    }
+    .third .text-section h3 {
+        width: 60%;
+        font-weight: 400;
+        /* height: 200px; */
+    }
+    .third .text-section p {
+        width: 74%;
+        line-height: 50px;
+        font-weight: 500;
+    }
+    .third .card {
+        width: 45%;
+    }
+    .fifth {
+        height: 1600px;
+    }
+    .stack-container {
+        height: 80%;
+    }
+    .stack-container .card-stack {
+        width: 45%;
+    }
+    .trackcard {
+        width: 43%;
+    }
+    .six {
+        height: 1000px;
+    }
+    .closed-wrapper .twitter-link {
+        margin-top: 50px;
+    }
+}
+
+
+/* @media screen and (max-width: 992px) {
+    body {
+        width: 100%;
+    }
+    nav {
+        width: 100%
+    }
+    .navbar.logo-images {
+        margin-right: 90px;
+    }
+} */
+
+
+/* 
+
+@media screen and (min-width: 768px) {
+    body {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+}
+*/
+
+@media screen and (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+    .navbar {
+        width: 100%;
+        height: 4%;
+        margin-top: 10px;
+    }
+    .logo-images {
+        width: 40%;
+    }
+    .logo-images img {
+        height: 30px;
+        width: 170px;
+        margin-right: 20px;
+    }
+    .items {
+        width: 0;
+    }
+    .enrollthing {
+        margin-left: 0;
+        padding-left: 0;
+        width: 20%;
+        display: flex;
+        justify-self: flex-start;
+    }
+    .enrollthing img {
+        width: 30px;
+        height: 40px;
+    }
+    .enroll {
+        width: 170px;
+        height: 40px;
+    }
+    .first {
+        height: 900px;
+    }
+    .first-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .leftimage {
+        width: 100%;
+        margin-top: 20px;
+        height: 210px;
+        margin-bottom: 20px;
+    }
+    .leftimage img {
+        width: 100%;
+    }
+    .textarea {
+        padding-top: 40px;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .textarea #pone {
+        text-align: center;
+        width: 100%;
+    }
+    .textarea #ptwo {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .textarea #pthree {
+        font-size: 16px;
+        width: 100%;
+        padding: 25px 25px 30px 25px;
+        letter-spacing: 0.00938em;
+        /* text-align: justify; */
+    }
+    .textarea a {
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    .second {
+        height: 500px;
+        width: 100%;
+    }
+    .sec-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-content: center; */
+        padding: 40px 20px 20px 20px;
+    }
+    .sec-container h3 {
+        height: 30%;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .sec-container p {
+        width: 100%;
+        margin: 20px 20px 20px 20px;
+        text-align: center;
+        font-weight: 400;
+        padding-bottom: 40px;
+        height: 25%;
+    }
+    .sec-container .poweredby {
+        margin-left: 0;
+    }
+    .third {
+        height: 2900px;
+        width: 100%;
+    }
+    .third-container {
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    .text-section {
+        width: 100%;
+        height: 150px;
+    }
+    .text-section h3 {
+        width: 100%;
+        font-size: 18px;
+    }
+    .third .text-section p {
+        width: 100%;
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 100px 20px 20px 0px;
+    }
+    .card-wrapper .card {
+        height: 350px;
+        width: 100%;
+    }
+    .card .card-number {
+        margin-top: 30px;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .card .card-title {
+        font-size: 30px;
+    }
+    .card .card-text {
+        margin-top: 20px;
+    }
+    #card-one {
+        text-align: left;
+    }
+    .fourth {
+        width: 100%;
+        height: 1000px;
+        padding: 0;
+    }
+    .four-container {
+        width: 100%;
+        /* padding: 20px; */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .text-left {
+        height: 60%;
+        width: 100%;
+        margin-right: 0%;
+    }
+    .forth-text {
+        margin-bottom: 40px;
+    }
+    .forth-text h5 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .forth-text .high-quality {
+        width: 100%;
+        font-size: 30px;
+    }
+    .forth-text .weekly-tasks {
+        width: 100%;
+        margin-top: 14px;
+        line-height: 25px;
+    }
+    .four-container .image-right {
+        float: none;
+        height: 40%;
+        width: 100%;
+        /* margin-bottom: 30px; */
+    }
+    .buttongroup {
+        height: 30%;
+        width: 100%;
+    }
+    .row .btn-info {
+        height: 38%;
+        width: 40%;
+        margin-right: 30px;
+    }
+    .fifth {
+        height: 2450px;
+        width: 100%;
+        padding: 40px 20px 20px 20px;
+    }
+    .fifth-container {
+        width: 100%;
+        height: 100%;
+    }
+    .fifth .scope {
+        width: 100%;
+        height: 6%;
+    }
+    .scope h4 {
+        font-size: 21px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .scope p {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .stack-container {
+        height: 90%;
+        width: 100%;
+    }
+    .stack-container .card-stack {
+        width: 100%;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+    .six {
+        height: 1200px;
+        width: 100%;
+    }
+    .six .closed-wrapper {
+        height: 100%;
+        width: 100%;
+        padding: 50px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .questions {
+        height: 15%;
+        width: 100%;
+    }
+    .closed-wrapper .questions h5 {
+        font-size: 21px;
+        font-weight: 400;
+    }
+    .closed-wrapper .questions h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .wrapper .accordion {
+        width: 100%;
+    }
 }
