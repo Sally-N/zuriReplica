@@ -845,7 +845,7 @@
                                         color: #fff;
                                     }
                                     
-                                    .get-started a button {
+                                    .get-started button {
                                         margin: 20px;
                                         width: 170px;
                                         height: 40px;
@@ -855,8 +855,8 @@
                                         border-radius: 50px;
                                     }
                                     
-                                    .get-started a button:hover {
-                                        transition: box-shadow 0.6s;
+                                    .get-started a:hover {
+                                        transition: box-shadow 1s;
                                         box-shadow: 0 0 1px 1px #3b3a44;
                                     }
                                     /* / Small devices (landscape phones, 576px and up) */
