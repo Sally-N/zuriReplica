@@ -21,17 +21,12 @@
               width: 100%;
               overflow: hidden;
               top: 0;
-              /* align-content: center; */
-              /* justify-content: center; */
-          }
-          
-          .container-fluid {
-              width: 100%;
+              align-items: center;
           }
           
           .navbar .logo-images {
               align-items: center;
-              width: 40%;
+              width: 45%;
           }
           
           .navbar .links {
@@ -39,48 +34,41 @@
               flex-direction: row;
               justify-content: center;
               align-content: center;
-          }
-          
-          .navbar ul {
-              margin: 20px 0px 20px 20px;
+              width: 30%;
+              margin: 15px 100px 20px 15px;
           }
           
           .navbar ul {
               display: flex;
               flex-direction: row;
-              /* padding-right: 70px; */
               align-items: center;
           }
           
           .navbar ul li {
               list-style: none;
-              margin-right: 45px;
-              margin-left: 40px;
+              margin-right: 35px;
+              margin-left: 30px;
           }
           
           .navbar ul li a {
-              /* list-style: none; */
+              text-align: center;
               color: #514949;
-              font-size: 17px;
-              letter-spacing: 0.09px;
-              font-family: Averta;
+              font-size: 16px;
+              font-family: Graphik;
               font-weight: 50px;
               text-decoration: none;
           }
           
           .navbar ul li a::hover {
-              transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+              transition: 0s;
           }
-          /* .navbar ul li a::selection {
-                text-decoration: underline 2px #E7332B;
-                text-underline-position: below;
-                text-underline-offset: 20px;
-            } */
           
-          .links .talentwrap {
+          .talentwrap {
               width: 10%;
               display: flex;
               padding: 15px 30px 15px 0;
+              display: inline;
+              justify-self: end;
           }
           
           .talentwrap .hiretalents button {
@@ -117,8 +105,9 @@
               height: 100%;
               background-color: #ffffff;
               display: flex;
-              flex-wrap: row wrap;
-              padding: 40px 50px 40px 70px;
+              flex-direction: row;
+              /* flex-wrap: row wrap; */
+              padding: 40px 50px 40px 60px;
               width: 100%;
           }
           
@@ -129,6 +118,7 @@
               padding-top: 80px;
               width: 50%;
               justify-content: center;
+              height: 100%;
           }
           
           .separate h2 {
@@ -276,11 +266,15 @@
               margin-right: 15px;
               background-color: white;
               padding-top: 4px;
+              align-items: center;
+              justify-items: center;
+              border-radius: 10px;
           }
           
           .individual img {
-              height: 90%;
-              width: 90%;
+              margin-top: 2%;
+              height: 80%;
+              width: 80%;
               font-size: xx-small;
           }
           
@@ -301,6 +295,7 @@
               padding-top: 30px;
               height: 600px;
               background: #ffffff;
+              width: 100%;
           }
           
           .third-container {
@@ -343,6 +338,8 @@
               flex-direction: row;
               width: 90%;
               margin-bottom: 40px;
+              /* align-items: center;
+              justify-content: center; */
           }
           
           .part-one .row-skill button {
@@ -485,11 +482,12 @@
           
           .linktalents button {
               height: 45px;
-              width: 220px;
+              width: 200px;
+              margin: 0 50px 0 0;
+              /* margin-right: 50px; */
               border: none;
               color: #ffffff;
-              padding-top: 0px;
-              padding-bottom: 5px;
+              padding: 0 0 0 5px;
               font-family: Graphik;
               font-size: 16px;
               border-bottom-right-radius: 7px;
@@ -560,6 +558,10 @@
               margin-right: 10px;
           }
           
+          .paragraph {
+              margin: 30px 40px 30px 70px
+          }
+          
           @media screen and (max-width: 560px) {
               body {
                   width: 100%;
@@ -572,25 +574,161 @@
                   width: 30%;
                   padding: 10px 10px 10px 30px;
               }
+              .navbar .d-none {
+                  display: none;
+              }
               .links .talentwrap {
                   width: 40%;
               }
               .first {
-                  height: 700px;
+                  height: 950px;
                   width: 100%;
               }
               .first-container {
+                  height: 100%;
                   display: flex;
+                  align-content: flex-start;
+                  justify-content: flex-start;
+                  /* flex-wrap: column wrap; */
                   flex-direction: column;
                   padding: 30px 20px 20px 20px;
                   width: 100%;
               }
               .first-container .separate {
-                  width: 80%;
-                  padding-top: 0px;
+                  align-content: center;
+                  justify-content: center;
+                  width: 100%;
+                  padding-top: 100px;
+                  height: 50%;
               }
               .separate h2 {
-                  font-size: 35px;
-                  line-height: 27;
+                  font-size: 34px;
+                  line-height: 30px;
+                  font-weight: 500;
+                  text-align: center;
+              }
+              .separate p {
+                  font-size: 18px;
+              }
+              .first-container .imagesection {
+                  padding: 20px 0 0 0;
+                  width: 100%;
+                  height: 45%;
+                  margin-left: 0;
+              }
+              .imagesection img {
+                  width: 100%;
+                  height: 90%;
+              }
+              .sec {
+                  width: 100%;
+                  height: 850px;
+              }
+              .sec .context {
+                  display: flex;
+                  flex-direction: column;
+                  padding: 20px;
+              }
+              .things-left {
+                  width: 100%;
+                  height: 45%;
+              }
+              .things-left h2 {
+                  font-size: 25px;
+                  line-height: 30px;
+              }
+              .things-left .button-groups .individual {
+                  height: 55px;
+                  width: 55px;
+              }
+              .individual img {
+                  height: 70%;
+                  width: 70%;
+                  /* margin-top: ; */
+              }
+              .context .people-img {
+                  width: 100%;
+                  height: 50%;
+                  margin: 60px 0 0 0;
+              }
+              .third {
+                  height: 830px;
+              }
+              .third-container {
+                  padding: 40px 20px 20px 20px;
+              }
+              .part-one h3,
+              .part-two h3 {
+                  font-size: 25px;
+                  line-height: 30px;
+                  width: 100%;
+                  height: 50%;
+              }
+              .part-one .row-skill {
+                  width: 100%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  /* align-items: flex-start; */
+                  flex-direction: unset;
+              }
+              .part-one .row-skill button {
+                  height: 80px;
+                  width: 175px;
+                  margin-right: 10px;
+                  font-size: 15px;
+                  line-height: 30px;
+                  text-align: center;
+                  padding: 10px 15px 20px 15px;
+                  margin-bottom: 10px;
+              }
+              .part-two .row-companies {
+                  width: 100%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: unset;
+              }
+              .part-two .row-companies button {
+                  height: 50px;
+                  width: 175px;
+                  margin-right: 10px;
+                  font-size: 15px;
+                  line-height: 30px;
+                  text-align: center;
+                  padding: 10px 15px 20px 15px;
+                  margin-bottom: 10px;
+              }
+              .forth {
+                  height: 2400px;
+              }
+              .four-container {
+                  width: 100%;
+                  height: 100%;
+                  padding: 40px 20px 20px 20px;
+              }
+              .four-container .for-hire {
+                  height: 3%;
+              }
+              .four-container .for-hire h3 {
+                  font-size: 30px;
+                  margin-top: 30px;
+                  margin-bottom: 00px;
+              }
+              .reasons {
+                  width: 100%;
+              }
+              .reasons-container {
+                  width: 100%;
+              }
+              .card {
+                  height: 350px;
+                  width: 100%;
+              }
+              .four-container .linktalents {
+                  justify-content: flex-start;
+                  align-items: flex-start;
+              }
+              .linktalents button {
+                  width: 160px;
+                  margin: 0 10px 0 10px;
               }
           }
